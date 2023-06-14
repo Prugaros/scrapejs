@@ -29,7 +29,7 @@ const searchQueryConstructor = (item, sort_by) => {
 
 class Mercari {
   async init() {
-    this.browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
+    this.browser = await puppeteer.launch({ headless: "new", args: ['--no-sandbox'] });
     this.page = await this.browser.newPage();
     await this.page.setViewport({ width: 1920, height: 1080 });
   }
